@@ -17,7 +17,9 @@ remotes::install_github("curso-r/pollsapi")
 ``` r
 # Look for your API key on Polls API web site
 # Sys.setenv(POLLSAPI_KEY = "WH6QP71XS0413TN1BFGSE24Q52XE")
+```
 
+``` r
 new_poll <- polls_create_poll(
   paste0("Is this a test? created at", Sys.time()),
   c("Yes", "No", "Maybe"),
